@@ -4,218 +4,99 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>SNAZY — Gen‑Z Streetwear</title>
-  <meta name="description" content="SNAZY — affordable, stylish streetwear for students and gym guys. Tees, hoodies, joggers. Gen‑Z vibe, fast shipping."/>
-  <meta name="theme-color" content="#FFFC00"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#000"/>
   <link rel="stylesheet" href="styles.css"/>
   <style>
-    /* Luxurious Gen-Z Theme inspired by Snitch/Bewakoof */
-
-    /* Font */
     body {
-      font-family: 'Inter', 'Montserrat', 'Poppins', Arial, sans-serif;
-      background: #101014;
-      color: #fff;
-      margin: 0;
-      padding: 0;
+      background: #fff;
+      color: #111;
     }
-
-    /* Accent color */
     :root {
-      --brand: #ffe600; /* Neon yellow */
-      --accent: #00e6e6; /* Electric blue */
-      --card-bg: #18181c;
-      --card-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+      --brand: #111;
+      --accent: #fff;
+      --card-bg: #f5f5f5;
+      --card-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
     }
-
-    /* Headings */
-    h1, h2, h3 {
-      font-weight: 800;
-      letter-spacing: -1px;
-      margin-bottom: 0.5em;
-    }
-
     h1 {
-      font-size: 2.8rem;
-      color: var(--brand);
-      background: linear-gradient(90deg, var(--brand), var(--accent));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #111;
+      background: none;
+      -webkit-text-fill-color: #111;
     }
-
-    h2 {
-      font-size: 2rem;
-      color: #fff;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-
-    /* Navbar */
     .nav {
-      background: #18181c;
-      box-shadow: var(--card-shadow);
+      background: #fff;
+      color: #111;
       border-radius: 0 0 18px 18px;
-      padding: 18px 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .nav .links a, .nav .links .cta {
-      color: #fff;
-      font-weight: 600;
-      margin: 0 14px;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .nav .links a:hover, .nav .links .cta:hover {
-      color: var(--brand);
-    }
-
-    .nav .cta {
-      background: var(--brand);
-      color: #101014;
-      border-radius: 8px;
-      padding: 8px 18px;
-      margin-left: 18px;
-      font-weight: 800;
-      box-shadow: 0 2px 8px 0 rgba(255,230,0,0.12);
-      transition: background 0.2s, color 0.2s;
-    }
-
-    .nav .cta:hover {
-      background: var(--accent);
-      color: #101014;
-    }
-
-    /* Buttons */
-    .btn, button {
-      background: var(--brand);
-      color: #101014;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 22px;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s;
-      box-shadow: 0 2px 8px 0 rgba(255,230,0,0.10);
-    }
-
-    .btn.primary, .btn:hover {
-      background: var(--accent);
-      color: #101014;
-    }
-
-    /* Cards */
-    .card, .category-block {
-      background: var(--card-bg);
-      border-radius: 18px;
       box-shadow: var(--card-shadow);
-      padding: 24px;
-      margin-bottom: 24px;
-      transition: transform 0.15s, box-shadow 0.15s;
     }
-
-    .card:hover, .category-block:hover {
-      transform: translateY(-4px) scale(1.03);
-      box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22);
+    .nav .links a, .nav .links .cta {
+      color: #111;
     }
-
-    /* Category grid */
-    .grid.two-cols {
-      display: flex;
-      gap: 32px;
-    }
-
-    .category-block h3 {
-      color: var(--brand);
-    }
-
-    .category-block .item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
+    .nav .cta {
+      background: #111;
       color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.2s;
     }
-
-    .category-block .item:hover {
-      color: var(--accent);
-    }
-
-    .category-block .item img {
-      width: 40px;
-      height: 40px;
-    }
-
-    /* Product grid */
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 24px;
-    }
-
-    .card .thumb img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      border-radius: 12px;
-      background: #222;
-      padding: 8px;
-    }
-
-    /* Misc */
-    .notice {
-      background: linear-gradient(90deg, var(--brand), var(--accent));
-      color: #101014;
-      font-weight: 700;
-      text-align: center;
-      padding: 10px 0;
-      letter-spacing: 1px;
-    }
-
-    input, select {
-      background: #222;
+    .nav .cta:hover {
+      background: #444;
       color: #fff;
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 8px 12px;
-      margin-right: 8px;
     }
-
-    input:focus, select:focus {
-      outline: 2px solid var(--brand);
+    .btn, button {
+      background: #111;
+      color: #fff;
     }
-
+    .btn.primary, .btn:hover {
+      background: #fff;
+      color: #111;
+      border: 1px solid #111;
+    }
+    .category-block, .card {
+      background: var(--card-bg);
+      color: #111;
+    }
     footer {
-      background: #18181c;
-      color: #aaa;
-      padding: 32px 0;
-      text-align: center;
-      border-radius: 18px 18px 0 0;
-      margin-top: 48px;
+      background: #111;
+      color: #fff;
+    }
+    /* Hamburger menu for mobile */
+    .hamburger {
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 16px;
+    }
+    .hamburger span {
+      display: block;
+      width: 28px;
+      height: 4px;
+      margin: 5px 0;
+      background: #111;
+      border-radius: 2px;
+    }
+    @media (max-width: 800px) {
+      .nav .links { display: none; }
+      .nav .links.open { display: block; }
     }
   </style>
 </head>
 <body>
-  <div class="notice">🔥 Flat 10% OFF on first order — use code <b>SNAZY10</b></div>
+  <div class="notice" style="background:#111;color:#fff;">🔥 Flat 10% OFF on first order — use code <b>SNAZY10</b></div>
   <header>
     <nav class="nav">
-      <a class="brand" href="#"><img src="assets/logo.svg" alt="SNAZY logo" /></a>
+      <a class="brand" href="#">
+        <!-- Redesigned logo: SVG S with snazy below -->
+        <span style="display:flex;flex-direction:column;align-items:center;">
+          <svg width="48" height="48" viewBox="0 0 48 48">
+            <path d="M8,16 Q24,0 40,16 Q24,32 8,48" stroke="#111" stroke-width="5" fill="none"/>
+          </svg>
+          <span style="font-size:1.2rem;letter-spacing:0.3em;font-weight:700;">s n a z y</span>
+        </span>
+      </a>
+      <div class="hamburger" onclick="document.querySelector('.nav .links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </div>
       <div class="links">
+        <a href="#support">Support</a>
+        <a href="#help">Help</a>
         <a href="#men">Men</a>
         <a href="#women">Women</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
         <a class="cta" href="#shop">Shop Now</a>
         <button class="btn" onclick="document.querySelector('#cart').showModal()">🛒 <span id='cart-count'>0</span></button>
       </div>
@@ -223,18 +104,20 @@
   </header>
 
   <section class="hero">
-    <div class="wrap">
+    <div class="wrap" style="display:flex;gap:32px;align-items:center;">
       <div>
-        <div class="badge"><b>NEW</b> Gen‑Z Streetwear • Made for Students & Gym Guys</div>
-        <h1>Be bold. Be comfy. <span style="background:var(--brand);color:#000;padding:0 8px;border-radius:8px">Be SNAZY.</span></h1>
-        <p>Premium‑feel tees, hoodies and joggers at middle‑class‑friendly prices. Clean fits, heavy GSM fabrics, and styles you can wear daily.</p>
+        <div class="badge"><b>NEW</b> Gen‑Z Streetwear • For Men & Women</div>
+        <h1>Be bold. Be comfy. <span style="background:#111;color:#fff;padding:0 8px;border-radius:8px">Be SNAZY.</span></h1>
+        <p>Premium tees, hoodies, joggers, and more for everyone. Minimal, comfy, and always in style.</p>
         <div class="buttons">
           <a class="btn primary" href="#shop">Shop Collection</a>
           <a class="btn" href="#about">Why SNAZY?</a>
         </div>
       </div>
-      <div class="card">
-        <img src="assets/tee.svg" alt="Featured Tee">
+      <div class="card" style="background:#fff;">
+        <!-- Highlighted niche product -->
+        <img src="assets/oversize_tee.svg" alt="Niche: Oversize Tee">
+        <div style="margin-top:8px;font-weight:700;color:#111;">Niche Pick: Oversize Tee</div>
       </div>
     </div>
   </section>
@@ -244,15 +127,15 @@
     <div class="grid two-cols">
       <div class="category-block" id="men">
         <h3>Men</h3>
-        <a class="item" href="#shop"><img src="assets/tee.svg" alt="Men's T-Shirts"/><span>T-Shirts</span></a>
-        <a class="item" href="#shop"><img src="assets/hoodie.svg" alt="Men's Hoodies"/><span>Hoodies</span></a>
-        <a class="item" href="#shop"><img src="assets/jogger.svg" alt="Men's Joggers"/><span>Joggers</span></a>
+        <a class="item" href="#shop"><span>T-Shirts</span></a>
+        <a class="item" href="#shop"><span>Pyjamas</span></a>
+        <a class="item" href="#shop"><span>Hoodies</span></a>
       </div>
       <div class="category-block" id="women">
         <h3>Women</h3>
-        <a class="item" href="#shop"><img src="assets/tank.svg" alt="Women's Tanks"/><span>Tanks</span></a>
-        <a class="item" href="#shop"><img src="assets/hoodie.svg" alt="Women's Hoodies"/><span>Hoodies</span></a>
-        <a class="item" href="#shop"><img src="assets/jogger.svg" alt="Women's Joggers"/><span>Joggers</span></a>
+        <a class="item" href="#shop"><span>T-Shirts</span></a>
+        <a class="item" href="#shop"><span>Pyjamas</span></a>
+        <a class="item" href="#shop"><span>Hoodies</span></a>
       </div>
     </div>
   </section>
