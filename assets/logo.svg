@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <rect width="1200" height="400" fill="#FFFC00"/>
+  <!-- Ghost -->
+  <g transform="translate(80,60)" stroke="#000" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 304c-32 0-48-26-72-26s-40 26-72 26c-24 0-44-18-44-40 0-148 52-224 160-224 108 0 160 76 160 224 0 22-20 40-44 40-32 0-48-26-72-26s-40 26-72 26z" fill="none"/>
+  </g>
+  <g transform="translate(80,60)">
+    <path d="M120 304c-32 0-48-26-72-26s-40 26-72 26c-24 0-44-18-44-40 0-148 52-224 160-224 108 0 160 76 160 224 0 22-20 40-44 40-32 0-48-26-72-26s-40 26-72 26z" fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- face -->
+    <circle cx="120" cy="160" r="12" fill="#000"/>
+    <circle cx="184" cy="160" r="12" fill="#000"/>
+    <path d="M110 196c12 10 36 10 48 0" fill="none" stroke="#000" stroke-width="12" stroke-linecap="round"/>
+    <!-- sleep cap -->
+    <path d="M46 106c36-34 84-48 144-36 24 6 44 18 60 30" fill="none" stroke="#000" stroke-width="14" stroke-linecap="round"/>
+    <path d="M250 100c-2 24-8 38-26 52" fill="none" stroke="#000" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="214" cy="156" r="12" fill="#000"/>
+    <!-- Zs -->
+    <g fill="#000" transform="translate(260,30)">
+      <path d="M0 0h44l-28 24h28v14H0l28-24H0V0z"/>
+      <g transform="translate(40,34) scale(0.7)">
+        <path d="M0 0h44l-28 24h28v14H0l28-24H0V0z"/>
+      </g>
+    </g>
+  </g>
+  <!-- SNAZY wordmark -->
+  <g transform="translate(430,85)">
+    <text x="0" y="220" font-family="Inter,Arial,Helvetica,sans-serif" font-size="220" font-weight="800" fill="#000">SNAZY</text>
+  </g>
+</svg>

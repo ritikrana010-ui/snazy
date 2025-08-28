@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SNAZY — Gen‑Z Streetwear</title>
+  <meta name="description" content="SNAZY — affordable, stylish streetwear for students and gym guys. Tees, hoodies, joggers. Gen‑Z vibe, fast shipping."/>
+  <meta name="theme-color" content="#FFFC00"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="notice">🔥 Flat 10% OFF on first order — use code <b>SNAZY10</b></div>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="#"><img src="assets/logo.svg" alt="SNAZY logo" /></a>
+      <div class="links">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#shop">Shop Now</a>
+        <button class="btn" onclick="document.querySelector('#cart').showModal()">🛒 <span id='cart-count'>0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="badge"><b>NEW</b> Gen‑Z Streetwear • Made for Students & Gym Guys</div>
+        <h1>Be bold. Be comfy. <span style="background:var(--brand);color:#000;padding:0 8px;border-radius:8px">Be SNAZY.</span></h1>
+        <p>Premium‑feel tees, hoodies and joggers at middle‑class‑friendly prices. Clean fits, heavy GSM fabrics, and styles you can wear daily.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#shop">Shop Collection</a>
+          <a class="btn" href="#about">Why SNAZY?</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/tee.svg" alt="Featured Tee">
+      </div>
+    </div>
+  </section>
+
+  <section class="section categories" id="categories">
+    <h2>Shop by Category</h2>
+    <div class="grid">
+      <a class="item" href="#shop"><img src="assets/tee.svg" alt="T-Shirts"/></a>
+      <a class="item" href="#shop"><img src="assets/hoodie.svg" alt="Hoodies"/></a>
+      <a class="item" href="#shop"><img src="assets/jogger.svg" alt="Joggers"/></a>
+      <a class="item" href="#shop"><img src="assets/tank.svg" alt="Tanks"/></a>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+    <h2>Trending Now</h2>
+    <div class="search">
+      <input type="search" placeholder="Search products… (demo only)" />
+      <button onclick="alert('This is a static demo — connect to Shopify/WooCommerce later.')">Search</button>
+    </div>
+    <div class="filters">
+      <select id="sizeFilter">
+        <option value="all">All Sizes</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select>
+      <input id="minPrice" type="number" placeholder="Min ₹" min="0" step="100"/>
+      <input id="maxPrice" type="number" placeholder="Max ₹" min="0" step="100"/>
+    </div>
+
+    <div class="grid">
+      <!-- Product Cards -->
+      <article class="card" data-card data-size="M" data-price="699">
+        <div class="thumb"><img src="assets/oversize_tee.svg" alt="Oversize Tee"/></div>
+        <div class="meta">
+          <h3>Oversize Tee — Jet Black</h3>
+          <div class="price"><b>₹699</b> <s>₹999</s> <span class="tag">240 GSM</span></div>
+          <button class="btn primary" onclick="addToCart('Oversize Tee — Jet Black',699)">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="card" data-card data-size="L" data-price="799">
+        <div class="thumb"><img src="assets/hoodie.svg" alt="Hoodie"/></div>
+        <div class="meta">
+          <h3>Core Hoodie — Graphite</h3>
+          <div class="price"><b>₹799</b> <s>₹1199</s> <span class="tag">Soft Fleece</span></div>
+          <button class="btn primary" onclick="addToCart('Core Hoodie — Graphite',799)">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="card" data-card data-size="XL" data-price="749">
+        <div class="thumb"><img src="assets/jogger.svg" alt="Joggers"/></div>
+        <div class="meta">
+          <h3>Power Joggers — Charcoal</h3>
+          <div class="price"><b>₹749</b> <s>₹1099</s> <span class="tag">Stretch Fit</span></div>
+          <button class="btn primary" onclick="addToCart('Power Joggers — Charcoal',749)">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="card" data-card data-size="S" data-price="499">
+        <div class="thumb"><img src="assets/cap.svg" alt="Cap"/></div>
+        <div class="meta">
+          <h3>Snapback Cap — S Logo</h3>
+          <div class="price"><b>₹499</b> <s>₹699</s> <span class="tag">Adjustable</span></div>
+          <button class="btn primary" onclick="addToCart('Snapback Cap — S Logo',499)">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What the fam says</h2>
+    <div class="grid">
+      <div class="review"><div class="stars">★★★★★</div><p>Heavy fabric, clean fit. Best for college.</p><div class="small">— Aditya</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>Gym joggers are on point. Stretch + taper 🔥</p><div class="small">— Raghav</div></div>
+      <div class="review"><div class="stars">★★★★☆</div><p>Quality at this price = W.</p><div class="small">— Meera</div></div>
+      <div class="review"><div class="stars">★★★★★</div><p>Quick delivery, neat packaging.</p><div class="small">— Sana</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About SNAZY</h2>
+    <p class="small">SNAZY is an Indian streetwear label built for students, gym lovers and the everyday hustler. We keep it comfy, minimal and pocket‑friendly. No cringe quotes, only clean designs and solid fabrics.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="grid">
+      <div class="card" style="padding:16px">
+        <h3>Reach us</h3>
+        <p class="small">support@snazy.shop<br/>Instagram: @snazy.offcl<br/>Phone: +91‑90000‑00000</p>
+        <p class="small">Business hours: Mon–Sat, 10am–6pm IST</p>
+      </div>
+      <div class="card" style="padding:16px">
+        <h3>Wholesale & Collabs</h3>
+        <p class="small">We collaborate with creators & gyms. Mail us your idea and we’ll vibe check it.</p>
+        <a class="btn primary" href="mailto:support@snazy.shop">Pitch a collab</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div><img src="assets/logo.svg" alt="Snazy" style="width:200px"><p class="small">© 2025 SNAZY. All rights reserved.</p></div>
+      <div class="small">Privacy • Terms • Refunds — These pages are placeholders. Connect your store platform (Shopify/WooCommerce) to enable real checkout.</div>
+    </div>
+  </footer>
+
+  <!-- Simple cart -->
+  <dialog id="cart" style="max-width:560px;border:none;border-radius:18px;padding:0">
+    <div style="background:var(--brand);color:#000;padding:14px 16px;font-weight:900;display:flex;align-items:center;justify-content:space-between">
+      <span>🛒 Your Cart</span>
+      <form method="dialog"><button class="btn">Close</button></form>
+    </div>
+    <div style="padding:16px;background:#0f0f0f;color:#fff">
+      <ol id="cart-items"></ol>
+      <p class="small">This is a static demo cart. Hook this up to a backend.</p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
